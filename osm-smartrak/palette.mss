@@ -1,5 +1,5 @@
 /* ****************************************************************** */
-/* OSM BRIGHT for Imposm                                              */
+/* OSM Smartrak for Imposm                                            */
 /* ****************************************************************** */
 
 /* For basic style customization you can simply edit the colors and
@@ -93,7 +93,11 @@ Map { font-directory: url(./fonts); }
 @standard_fill:     #fff;
 @standard_case:     #d8d3ca;
 
-@pedestrian_line:   #ded8cd;
+@service_line:      #e3dfd8;
+@service_fill:      #e2e0d6;
+@service_case:      #d8d3ca;
+
+@pedestrian_line:   #e0d9cc;
 @pedestrian_fill:   #fbf6ee;
 @pedestrian_case:   #ded8cd;
 
