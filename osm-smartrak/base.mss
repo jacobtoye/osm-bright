@@ -68,11 +68,10 @@
 #buildings[zoom>=12][zoom<=16] {
   polygon-fill:@building;
   [zoom>=14] {
-    line-color:darken(@building,5);
+    line-color:darken(@building,10);
     line-width:0.3;
   }
   [zoom>=16] {
-    line-color:darken(@building,10);
     line-width:0.6;
   }
 }
