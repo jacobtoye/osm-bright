@@ -277,7 +277,7 @@
     text-halo-fill: #fff;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
-      text-face-name: @sans_lt_italic;
+      text-face-name: @sans;
       text-fill: @park * 0.6;
       text-halo-fill: lighten(@park, 10);
     }
