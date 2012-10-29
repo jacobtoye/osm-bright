@@ -465,7 +465,7 @@
   [zoom>=17] { text-size:13; }
 }
 
-#mainroad_label[type='tertiary'][zoom>13],
+#mainroad_label[type='tertiary'][zoom>14],
 #minorroad_label[zoom>14] {
   text-name:'[name]';
   text-face-name:@sans;
