@@ -55,8 +55,8 @@ come in as well.
 
 /* Road width variables that are used in road & bridge styles */
 @rdz11_maj: 1.6; @rdz11_med: 0.8; @rdz11_min: 0.4;
-@rdz12_maj: 2.5; @rdz12_med: 1.2; @rdz12_min: 0.8;
-@rdz13_maj: 4;   @rdz13_med: 3; @rdz13_min: 1;
+@rdz12_maj: 2.5; @rdz12_med: 1.2; @rdz12_min: 0.7;
+@rdz13_maj: 4;   @rdz13_med: 3;   @rdz13_min: 1;
 @rdz14_maj: 5;   @rdz14_med: 4;   @rdz14_min: 3;
 @rdz15_maj: 7;   @rdz15_med: 5.6; @rdz15_min: 4.8;
 @rdz16_maj: 14;  @rdz16_med: 10;  @rdz16_min: 8;
