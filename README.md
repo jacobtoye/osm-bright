@@ -1,7 +1,7 @@
 OSM Smartrak
 ==========
 
-![screenshot](https://raw.github.com/mapbox/osm-bright/master/preview.png)
+![screenshot](https://raw.github.com/jacobtoye/osm-bright/master/preview.png)
 
 OSM Smartrak is a fork of the amazing [OSM Bright](https://github.com/mapbox/osm-bright) project. The changes are purely cosmetic, bring the map style a bit closer to a Google Maps style.
 
