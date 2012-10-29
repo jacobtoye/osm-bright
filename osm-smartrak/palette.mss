@@ -94,8 +94,8 @@ Map { font-directory: url(./fonts); }
 @standard_case:     #d8d3ca;
 
 @service_line:      #e3dfd8;
-@service_fill:      #e2e0d6;
-@service_case:      #d8d3ca;
+@service_fill:      #faf9f6;
+@service_case:      #dfdad2;
 
 @pedestrian_line:   #e0d9cc;
 @pedestrian_fill:   #fbf6ee;
