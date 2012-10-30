@@ -28,15 +28,15 @@ def clean():
   for f in glob("build/*.html"): unlink(f)
 
 def build():
-  #copy the osm-bright tree to a build dir
-  copy_tree("osm-bright", "build")
+  #copy the theme tree to a build dir
+  copy_tree(config["theme"], "build")
 
   #remove the mml templates
   for f in glob("build/*.mml"):
     unlink(f)
 
   #load the project template
-  templatefile = open(join('osm-bright', 'osm-bright.%s.mml' % config["importer"]))
+  templatefile = open(join(config["theme"], config["theme"] + ('.%s.mml' % config["importer"])))
   template = loads(templatefile.read())
 
   #fill in the project template
@@ -68,13 +68,13 @@ def install():
   copy_tree("build", output_dir)
 
 def pull():
-  #copy the project from mapbox to osm-bright
+  #copy the project from mapbox to the theme folder
   sanitized_name = re.sub("[^\w]", "", config["name"])
   output_dir = join(config["path"], sanitized_name)
-  copy_tree(output_dir, "osm-bright", ("layers", ".thumb.png"))
+  copy_tree(output_dir, config["theme"], ("layers", ".thumb.png"))
 
   #load the project file
-  project = loads(open(join("osm-bright", "project.mml")).read())
+  project = loads(open(join(config["theme"], "project.mml")).read())
 
   #Make sure we reset postgis data in the project file back to its default values
   defaultconfig = defaultdict(defaultdict)
@@ -102,11 +102,11 @@ def pull():
         elif opt in layer["Datasource"]:
           del layer["Datasource"][opt]
 
-  project_template = open(join("osm-bright", "osm-bright.%s.mml") % config["importer"], 'w')
+  project_template = open(join(config["theme"], config["theme"] + ".%s.mml") % config["importer"], 'w')
   project_template.write(dumps(project, sort_keys=True, indent=2))
 
   #now delete project.mml
-  unlink(join("osm-bright", "project.mml"))
+  unlink(join(config["theme"], "project.mml"))
 
 if __name__ == "__main__":
   if sys.argv[-1] == "clean":
