@@ -1,5 +1,5 @@
 /* ****************************************************************** */
-/* OSM BRIGHT for Imposm                                              */
+/* OSM SMARTRAK for Imposm                                            */
 /* ****************************************************************** */
 
 /* For basic style customization you can simply edit the colors and
