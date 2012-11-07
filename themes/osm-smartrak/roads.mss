@@ -98,10 +98,6 @@ come in as well.
     line-color: @secondary_case;
     [bridge=1] { line-color: @secondary_case * 0.8; }
   }
-  [stylegroup='minorroad'] {
-    line-color: @standard_case;
-    [bridge=1] { line-color: @standard_case * 0.8; }
-  }
   [stylegroup='service'] {
     line-color: @service_case;
     [bridge=1] { line-color: @service_case * 0.8; }
@@ -211,12 +207,8 @@ come in as well.
     line-color: @secondary_fill;
     [tunnel=1] { line-color: lighten(@secondary_fill, 10%); }
   }
-  [stylegroup='minorroad'] {
+  [stylegroup='minorroad'][zoom<14] {
     line-color: @standard_line;
-  }
-  [stylegroup='minorroad'][zoom>=14] {
-    line-color: @standard_fill;
-    [tunnel=1] { line-color: lighten(@standard_fill, 10%); }
   }
   [stylegroup='service'] {
     line-color: @service_line;
