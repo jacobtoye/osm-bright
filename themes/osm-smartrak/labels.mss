@@ -22,6 +22,7 @@
   text-fill:@country_text;
   text-halo-fill: @country_halo;
   text-halo-radius: 1;
+  text-clip: false;
   [zoom=3] {
     text-size:10 + @text_adjust;
     text-wrap-width: 40;
@@ -57,6 +58,7 @@
   text-fill:@state_text;
   text-halo-fill: @state_halo;
   text-halo-radius: 1;
+  text-clip: false;
   [zoom=6] {
     text-size:11 + @text_adjust;
     text-wrap-width: 40;
@@ -94,6 +96,7 @@
   text-fill:@city_text;
   text-halo-fill:@city_halo;
   text-halo-radius:2;
+  text-clip: false;
   [zoom<=8] {
     text-size: 14;
     text-halo-radius:1;
@@ -147,6 +150,7 @@
   text-halo-fill:@town_halo;
   text-halo-radius:1;
   text-wrap-width: 50;
+  text-clip: false;
   [zoom>=10] {
     text-halo-radius:2;
     text-size: 11;
@@ -196,6 +200,7 @@
   text-halo-fill:@other_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
+  text-clip: false;
   [zoom>=14] {
     text-size:12;
     text-character-spacing: 1;
@@ -236,6 +241,7 @@
   text-halo-fill:@locality_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
+  text-clip: false;
   [zoom>=16] {
     text-size:10;
     text-wrap-width: 60;
@@ -275,6 +281,7 @@
     text-wrap-width:30;
     text-fill: #888;
     text-halo-fill: #fff;
+    text-clip: false;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans;
@@ -313,6 +320,7 @@
     text-wrap-width: 60;
     text-character-spacing: 1;
     text-halo-radius: 2;
+    text-clip: false;
   }
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
@@ -320,12 +328,14 @@
     text-size: 15;
     text-character-spacing: 2;
     text-wrap-width: 120;
+    text-clip: false;
   }
   [zoom>=17][area>1600000],
   [zoom>=18][area>80000] {
     text-size: 20;
     text-character-spacing: 3;
     text-wrap-width: 180;
+    text-clip: false;
   }
 }
    
@@ -356,6 +366,7 @@
   text-placement: line;
   text-min-distance: 400;
   text-size: 10;
+  text-clip: false;
   [type='river'][zoom>=12] {
     text-size: 12;
   }
@@ -424,6 +435,7 @@
   text-min-distance:60;
   text-spacing: 200;
   text-size:10;
+  text-clip: false;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -442,6 +454,7 @@
   text-min-distance:60;
   text-spacing: 200;
   text-size:10;
+  text-clip: false;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -461,6 +474,7 @@
   text-min-distance:60;
   text-spacing: 200;
   text-size:11;
+  text-clip: false;
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
@@ -477,6 +491,7 @@
   text-min-distance:60;
   text-spacing: 200;
   text-size:11;
+  text-clip: false;
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
