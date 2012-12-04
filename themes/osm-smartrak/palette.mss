@@ -81,9 +81,9 @@ Map { font-directory: url(./fonts); }
 @trunk_case:        darken(@trunk_line,10);
 
 /* What are these, do we need to deferentiate them? */
-@primary_line:      #e5d5ac;
-@primary_fill:      #f8f093;
-@primary_case:      #e5d5ac;
+@primary_line:      @trunk_line;
+@primary_fill:      @trunk_fill;
+@primary_case:      @trunk_case;
 
 @secondary_line:    #e5d5ac;
 @secondary_fill:    #f8f093;
