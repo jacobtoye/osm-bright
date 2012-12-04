@@ -187,6 +187,9 @@ come in as well.
 #bridge[render='3_inline'][zoom>=11][zoom<=20]{
   /* -- colors & styles -- */
   line-color: @standard_fill;
+  [zoom<14] {
+    line-color: @standard_line;
+  }
   [type='motorway'],
   [type='motorway_link'] {
     line-color: @motorway_fill;
@@ -206,9 +209,6 @@ come in as well.
   [type='secondary_link'] {
     line-color: @secondary_fill;
     [tunnel=1] { line-color: lighten(@secondary_fill, 10%); }
-  }
-  [stylegroup='minorroad'][zoom<14] {
-    line-color: @standard_line;
   }
   [stylegroup='service'] {
     line-color: @service_line;
