@@ -151,6 +151,7 @@
   text-halo-radius:1;
   text-wrap-width: 50;
   text-clip: false;
+  text-min-distance: 20;
   [zoom>=10] {
     text-halo-radius:2;
     text-size: 11;
@@ -189,9 +190,9 @@
 
 /* ---- Other small places ------------------------------------------ */
 
-#place::small[type='village'][zoom>=13],
-#place::small[type='suburb'][zoom>=13],
-#place::small[type='hamlet'][zoom>=13] {
+#place::small[type='village'][zoom>=12],
+#place::small[type='suburb'][zoom>=12],
+#place::small[type='hamlet'][zoom>=12] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
@@ -201,6 +202,7 @@
   text-halo-radius:1;
   text-wrap-width: 30;
   text-clip: false;
+  text-min-distance: 20;
   [zoom>=14] {
     text-size:12;
     text-character-spacing: 1;
@@ -320,7 +322,7 @@
     text-wrap-width: 60;
     text-character-spacing: 1;
     text-halo-radius: 2;
-    text-clip: false;
+  text-clip: false;
   }
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
