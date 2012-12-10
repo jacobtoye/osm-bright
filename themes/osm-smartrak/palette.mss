@@ -125,19 +125,19 @@ Map { font-directory: url(./fonts); }
    at once or override each individually. */
 @place_halo:        fadeout(#fff,34%);
 
-@country_text:      #435;
+@country_text:      #222;
 @country_halo:      @place_halo;
 
-@state_text:        #546;
+@state_text:        #333;
 @state_halo:        @place_halo;
 
-@city_text:         #444;
+@city_text:         #333;
 @city_halo:         @place_halo;
 
-@town_text:         #666;
+@town_text:         #3a3a3a;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          #444;
 
 @motorway_text:     spin(darken(@motorway_fill,50),-15);
 @motorway_halo:     lighten(@motorway_fill,15);
