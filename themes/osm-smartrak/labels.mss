@@ -435,9 +435,10 @@
   text-halo-fill:@motorway_halo;
   text-halo-radius:1;
   text-min-distance:60;
-  text-spacing: 200;
+  text-spacing: 100;
   text-size:10;
   text-clip: false;
+  text-min-padding: 5
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -455,9 +456,10 @@
   text-halo-fill:@trunk_halo;
   text-halo-radius:1;
   text-min-distance:60;
-  text-spacing: 200;
+  text-spacing: 100;
   text-size:10;
   text-clip: false;
+  text-min-padding: 5
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -474,9 +476,10 @@
   text-halo-fill:@secondary_halo;
   text-halo-radius:1;
   text-min-distance:60;
-  text-spacing: 200;
+  text-spacing: 100;
   text-size:11;
   text-clip: false;
+  text-min-padding: 5
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
@@ -491,9 +494,10 @@
   text-halo-fill:@standard_halo;
   text-halo-radius:1;
   text-min-distance:60;
-  text-spacing: 200;
+  text-spacing: 100;
   text-size:11;
   text-clip: false;
+  text-min-padding: 5
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
