@@ -191,7 +191,7 @@
 /* ---- Other small places ------------------------------------------ */
 
 #place::small[type='village'][zoom>=12],
-#place::small[type='suburb'][zoom>=12],
+#place::small[type='suburb'][zoom>=10],
 #place::small[type='hamlet'][zoom>=12] {
   text-name:'[name]';
   text-face-name:@sans;
