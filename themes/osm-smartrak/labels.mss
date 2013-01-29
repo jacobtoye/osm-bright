@@ -89,28 +89,36 @@
 
 /* ---- Cities ------------------------------------------------------ */
 
-#place::city[type='city'][zoom>=8][zoom<=15] {
+#place::city[type='city'][zoom>=5][zoom<=15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
   text-fill:@city_text;
   text-halo-fill:@city_halo;
-  text-halo-radius:2;
+  text-halo-radius:1;
   text-clip: false;
-  [zoom<=8] {
-    text-size: 14;
-    text-halo-radius:1;
+  text-min-distance: 20;
+  [zoom<=6] {
+    text-size:11 + @text_adjust;
+    text-wrap-width: 40;
+  }
+  [zoom=7] {
+    text-size:12 + @text_adjust;
+    text-wrap-width: 50;
+  }
+  [zoom=8] {
+    text-size: 14 + @text_adjust;
   }
   [zoom=9] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-wrap-width: 60;
   }
   [zoom=10] {
-    text-size:15;
+    text-size:15 + @text_adjust;
     text-wrap-width: 70;
   }
   [zoom=11] {
-    text-size:15;
+    text-size:15 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
   }
@@ -126,13 +134,13 @@
     text-transform: uppercase;
   }
   [zoom=14] {
-    text-size:16;
+    text-size:16 + @text_adjust;
     text-character-spacing: 4;
     text-wrap-width: 300;
     text-transform: uppercase;
   }
   [zoom=15] {
-    text-size:17;
+    text-size:17 + @text_adjust;
     text-character-spacing: 6;
     text-wrap-width: 400;
     text-transform: uppercase;
@@ -281,8 +289,8 @@
     text-face-name:@sans;
     text-size: 11;
     text-wrap-width:30;
-    text-fill: #888;
-    text-halo-fill: #fff;
+    text-fill: rgba(0,0,0,0);
+    text-halo-fill: rgba(0,0,0,0);
     text-clip: false;
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
@@ -438,7 +446,7 @@
   text-spacing: 100;
   text-size:10;
   text-clip: false;
-  text-min-padding: 5
+  text-min-padding: 5;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -446,7 +454,7 @@
   [zoom>=17] { text-size:13; }
 }
 
-#motorway_label[type='trunk'][zoom>9,
+#motorway_label[type='trunk'][zoom>9],
 #mainroad_label[type='primary'][zoom>12] {
   text-name:"[name]";
   text-face-name:@sans;
@@ -459,7 +467,7 @@
   text-spacing: 100;
   text-size:10;
   text-clip: false;
-  text-min-padding: 5
+  text-min-padding: 5;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
   [zoom>=13] { text-min-distance:100; text-size:11; }
@@ -467,7 +475,7 @@
   [zoom>=17] { text-size:13; }
 }
 
-#mainroad_label[type='secondary'][zoom>13] {
+#mainroad_label[type='secondary'][zoom>12] {
   text-name:'[name]';
   text-face-name:@sans;
   text-label-position-tolerance: 5;
@@ -479,7 +487,7 @@
   text-spacing: 100;
   text-size:11;
   text-clip: false;
-  text-min-padding: 5
+  text-min-padding: 5;
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
@@ -497,7 +505,7 @@
   text-spacing: 100;
   text-size:11;
   text-clip: false;
-  text-min-padding: 5
+  text-min-padding: 5;
   [zoom>=15] { text-size:12; }
   [zoom>=17] { text-size:13; }
 }
@@ -518,5 +526,22 @@
   [zoom=17] { marker-transform: "scale(0.75)"; }
 }
 
+/* ================================================================== */
+/* ADDRESS POINTS
+/* ================================================================== */
+
+#address[zoom>=18] {
+  text-avoid-edges: true;
+  text-face-name:@sans;
+  text-fill: @address_text;
+  text-min-distance: 12;
+  text-min-padding: 5;
+  text-name:"[HOUSE_NUMB]";
+  text-size:10;
+  text-halo-radius: 1.5;
+  text-wrap-width:30;
+  text-halo-fill: @address_halo;
+  text-clip: false;
+}
 
 /* ****************************************************************** */
