@@ -74,7 +74,7 @@ Map { font-directory: url(./fonts); }
 
 @motorway_line:     #f09c37;
 @motorway_fill:     #f09c37;
-@motorway_case:     darken(@motorway_line,5);
+@motorway_case:     darken(@motorway_line,10);
 
 @trunk_line:        darken(#f4c364,5);
 @trunk_fill:        #f4c364;
