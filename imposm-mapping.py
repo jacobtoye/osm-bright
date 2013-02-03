@@ -174,6 +174,18 @@ minorroads = Highway(
     )}
 )
 
+ferries = LineStrings(
+    name = 'ferries',
+    fields = (
+        ('name', String()),
+    ),
+    mapping = {
+        'route': (
+            'ferry',
+        ),
+    }
+)
+
 transport_points = Points(
     name = 'transport_points',
     fields = (
