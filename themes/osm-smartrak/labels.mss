@@ -546,4 +546,21 @@
   text-clip: false;
 }
 
+/* ================================================================== */
+/* FERRIES
+/* ================================================================== */
+
+#ferries[zoom>=15] {
+  text-name: '[name]';
+  text-face-name: @sans;
+  text-fill: @ferry_text;
+  text-halo-fill: @ferry_halo;
+  text-halo-radius: 1;
+  text-min-distance: 50;
+  text-placement: line;
+  text-size: 11;
+  text-clip: false;
+  text-avoid-edges: true; 
+}
+
 /* ****************************************************************** */

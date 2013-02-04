@@ -111,6 +111,8 @@ Map { font-directory: url(./fonts); }
 
 @aeroway:           #ddd;
 
+@ferry_line:        darken(@water, 20);
+
 /* ================================================================== */
 /* BOUNDARY COLORS
 /* ================================================================== */
@@ -162,6 +164,12 @@ Map { font-directory: url(./fonts); }
 /* Also used for other small places: hamlets, suburbs, localities */
 @village_text:      #888;
 @village_halo:      @place_halo;
+
+@address_text:      rgba(136,133,127,0.75);
+@address_halo:      rgba(255,255,255,0.5);
+
+@ferry_text:        #566b82;
+@ferry_halo:        rgba(191,213,238,0.66);
 
 /* ****************************************************************** */
 

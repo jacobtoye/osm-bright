@@ -205,3 +205,22 @@ Map { background-color: @water; }
   line-color:darken(@park,5);
 
 }
+
+/* ================================================================== */
+/* FERRIES
+/* ================================================================== */
+
+#ferries[zoom>=10] {
+  line-color: @ferry_line;
+  line-dasharray: 6, 3;
+  [zoom>=10][zoom<14] {
+    line-width: 0.3;
+  }
+  [zoom=14] {
+    line-width: 0.5;
+  }
+  [zoom>=15] {
+    line-width: 0.8;
+  line-dasharray: 8, 4;
+  }
+}
