@@ -23,6 +23,7 @@
   text-halo-fill: @country_halo;
   text-halo-radius: 1;
   text-clip: false;
+  text-min-distance: 10;
   [zoom=3] {
     text-size:10 + @text_adjust;
     text-wrap-width: 40;
@@ -35,12 +36,12 @@
     text-halo-radius: 2;
   }
   [zoom=5] {
-    text-size:11 + @text_adjust;
+    text-size:13 + @text_adjust;
     text-wrap-width: 50;
     text-line-spacing: 1;
   }
   [zoom=6] {
-    text-size:12 + @text_adjust;
+    text-size:13 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
     text-line-spacing: 2;
@@ -59,6 +60,7 @@
   text-halo-fill: @state_halo;
   text-halo-radius: 1;
   text-clip: false;
+  text-min-distance: 10;
   [zoom=6] {
     text-size:11 + @text_adjust;
     text-wrap-width: 40;
@@ -97,28 +99,24 @@
   text-halo-fill:@city_halo;
   text-halo-radius:1;
   text-clip: false;
-  text-min-distance: 20;
-  [zoom<=6] {
-    text-size:11 + @text_adjust;
-    text-wrap-width: 40;
-  }
+  text-min-distance: 10;
+  text-size: 12;
   [zoom=7] {
-    text-size:12 + @text_adjust;
-    text-wrap-width: 50;
+    text-size: 13;
   }
   [zoom=8] {
-    text-size: 14 + @text_adjust;
+    text-size: 14;
   }
   [zoom=9] {
-    text-size:14 + @text_adjust;
+    text-size:14;
     text-wrap-width: 60;
   }
   [zoom=10] {
-    text-size:15 + @text_adjust;
+    text-size:15;
     text-wrap-width: 70;
   }
   [zoom=11] {
-    text-size:15 + @text_adjust;
+    text-size:15;
     text-character-spacing: 1;
     text-wrap-width: 80;
   }
@@ -134,13 +132,13 @@
     text-transform: uppercase;
   }
   [zoom=14] {
-    text-size:16 + @text_adjust;
+    text-size:16;
     text-character-spacing: 4;
     text-wrap-width: 300;
     text-transform: uppercase;
   }
   [zoom=15] {
-    text-size:17 + @text_adjust;
+    text-size:17;
     text-character-spacing: 6;
     text-wrap-width: 400;
     text-transform: uppercase;
