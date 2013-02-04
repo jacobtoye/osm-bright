@@ -530,24 +530,6 @@
 }
 
 /* ================================================================== */
-/* ADDRESS POINTS
-/* ================================================================== */
-
-#address[zoom>=18] {
-  text-avoid-edges: true;
-  text-face-name:@sans;
-  text-fill: @address_text;
-  text-min-distance: 12;
-  text-min-padding: 5;
-  text-name:"[HOUSE_NUMB]";
-  text-size:10;
-  text-halo-radius: 1.5;
-  text-wrap-width:30;
-  text-halo-fill: @address_halo;
-  text-clip: false;
-}
-
-/* ================================================================== */
 /* FERRIES
 /* ================================================================== */
 
