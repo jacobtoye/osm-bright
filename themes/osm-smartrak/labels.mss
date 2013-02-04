@@ -377,6 +377,7 @@
   text-min-distance: 400;
   text-size: 10;
   text-clip: false;
+  text-avoid-edges: true; 
   [type='river'][zoom>=12] {
     text-size: 12;
   }
