@@ -158,7 +158,7 @@ Map { font-directory: url(./fonts); }
 @other_text:        #666;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
+@locality_text:     #888;
 @locality_halo:     @land;
 
 /* Also used for other small places: hamlets, suburbs, localities */
